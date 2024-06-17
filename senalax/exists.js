@@ -1,5 +1,5 @@
 var senalax = Object.create(null);
-var senalax.check = function() {
+senalax.check = function() {
 	fetch("http://senalax.local/exists.txt", { method: 'POST', body: form })
 		.then(function (response) {
 		return response.text();
