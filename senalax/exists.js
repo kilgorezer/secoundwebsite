@@ -1,3 +1,4 @@
+var senalax = Object.create(null);
 var senalax.check = function() {
 	fetch("http://senalax.local/exists.txt", { method: 'POST', body: form })
 		.then(function (response) {
@@ -9,4 +10,4 @@ var senalax.check = function() {
 		} else {
 			senalax.exists = false;
 		}
-}
+};
