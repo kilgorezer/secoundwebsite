@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redirect to senalax.local!</title>
+    <script src="exists.js"></script>
+    <script src="/javakilg.js"></script>
+  </head>
+  <body>
+    <h1 id="senalax"><noscript>You need JavaScript to access some features on <a href="http://senalax.local">senalax.local</a>.</noscript></h1>
+    <script>
+      senalax.check();
+      if (senalax.exists) {
+        location.href = "http://senalax.local";
+      } else {
+        JavaKilg("DOM", "get")("id", "senalax")("innerHTML", "Access Denied. You are not on the correct WiFi. If you want to connect anyways, <a href='http://senalax.local/'>click here</a>.")
+      }
+    </script>
+  </body>
+</html>
