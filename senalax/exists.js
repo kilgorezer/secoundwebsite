@@ -10,4 +10,5 @@ senalax.check = function() {
 		} else {
 			senalax.exists = false;
 		}
+	});
 };
